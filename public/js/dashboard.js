@@ -111,7 +111,7 @@ async function analyzeImage() {
   document.getElementById('analysisProgress').classList.remove('hidden');
   
   try {
-    const response = await fetch(`${API_URL}/analysis/upload`, {
+    const response = await fetch(`${window.API_BASE_URL}/analysis/upload`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`
@@ -224,7 +224,7 @@ async function loadHistory() {
   const token = getToken();
   
   try {
-    const response = await fetch(`${API_URL}/analysis/history`, {
+    const response = await fetch(`${window.API_BASE_URL}/analysis/history`, {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -279,7 +279,7 @@ async function viewAnalysis(id) {
   const token = getToken();
   
   try {
-    const response = await fetch(`${API_URL}/analysis/${id}`, {
+    const response = await fetch(`${window.API_BASE_URL}/analysis/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -305,7 +305,7 @@ async function deleteAnalysis(id) {
   const token = getToken();
   
   try {
-    const response = await fetch(`${API_URL}/analysis/${id}`, {
+    const response = await fetch(`${window.API_BASE_URL}/analysis/${id}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${token}`
