@@ -4,9 +4,9 @@ const API_CONFIG = {
   local: {
     baseURL: 'http://localhost:5001/viscan-app-081/us-central1/api',
   },
-  // For production (Firebase hosting)
+  // For production (Firebase hosting and external hosts like HF)
   production: {
-    baseURL: '/api', // Proxied through Firebase hosting rewrites
+    baseURL: 'https://us-central1-viscan-app-081.cloudfunctions.net/api',
   },
 };
 
