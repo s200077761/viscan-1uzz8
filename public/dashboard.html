@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#667eea">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
+  
+  <!-- Apple PWA Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ViScan">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512x512.png">
+  
+  <title>لوحة التحكم - ViScan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/dashboard.css">
+  <script src="/js/config.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">👁️ ViScan</div>
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <span id="userWelcome" style="color: var(--text-muted);"></span>
+        <button onclick="logout()" class="btn btn-secondary" style="padding: 0.5rem 1.5rem;">
+          تسجيل الخروج
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dashboard-container">
+    <!-- Upload Section -->
+    <section class="upload-section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">📸 رفع صورة القزحية</h2>
+        
+        <div class="upload-card glass-card">
+          <div id="dropZone" class="drop-zone">
+            <div class="drop-zone-content">
+              <div style="font-size: 4rem; margin-bottom: 1rem;">📤</div>
+              <h3>اسحب الصورة هنا أو انقر للاختيار</h3>
+              <p class="text-muted">PNG, JPG, GIF حتى 5MB</p>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+          </div>
+          
+          <div id="imagePreview" class="image-preview hidden">
+            <img id="previewImage" alt="Preview">
+            <div class="preview-actions">
+              <button onclick="removeImage()" class="btn btn-secondary">إزالة</button>
+              <button onclick="analyzeImage()" class="btn btn-primary">🔍 بدء التحليل</button>
+            </div>
+          </div>
+          
+          <div id="analysisProgress" class="analysis-progress hidden">
+            <div class="spinner" style="margin: 0 auto;"></div>
+            <h3 style="text-align: center; margin-top: 1rem;">جاري تحليل الصورة...</h3>
+            <p style="text-align: center; color: var(--text-muted);">قد يستغرق هذا بضع ثوانٍ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="results-section hidden">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">📊 نتائج التحليل</h2>
+        
+        <div class="results-grid">
+          <!-- Overall Health Card -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem;">الحالة الصحية العامة</h3>
+            <div style="text-align: center;">
+              <div id="healthEmoji" style="font-size: 4rem; margin: 1rem 0;">🌟</div>
+              <h2 id="healthStatus" style="background: var(--success-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ممتاز</h2>
+            </div>
+          </div>
+          
+          <!-- Dominant Colors Card -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem;">الألوان السائدة</h3>
+            <div id="colorsContainer"></div>
+          </div>
+          
+          <!-- Detected Patterns Card -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem;">الأنماط المكتشفة</h3>
+            <div id="patternsContainer"></div>
+          </div>
+        </div>
+        
+        <!-- Zone Mapping Visualization -->
+        <div class="card" style="margin-top: 2rem;">
+          <h3 style="margin-bottom: 1.5rem; text-align: center;">🗺️ خريطة المناطق</h3>
+          <div id="zoneMapping" class="zone-mapping"></div>
+        </div>
+        
+        <!-- Recommendations -->
+        <div class="card" style="margin-top: 2rem;">
+          <h3 style="margin-bottom: 1rem;">💡 التوصيات</h3>
+          <div id="recommendationsContainer"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">📜 سجل التحليلات</h2>
+        <div id="historyContainer" class="history-grid"></div>
+        <div id="historyEmpty" class="text-center hidden" style="padding: 3rem;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">📁</div>
+          <h3 style="color: var(--text-muted);">لا توجد تحليلات سابقة</h3>
+          <p class="text-muted">قم برفع أول صورة لقزحيتك للبدء</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/js/utils.js"></script>
+  <script src="/js/dashboard.js"></script>
+  
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('✅ Service Worker registered:', registration.scope);
+          })
+          .catch((error) => {
+            console.error('❌ Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>

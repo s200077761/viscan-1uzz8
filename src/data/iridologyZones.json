@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Brain & Pineal",
+    "clockPosition": "12:00",
+    "radiusStart": 0.2,
+    "radiusEnd": 0.35,
+    "angleStart": 345,
+    "angleEnd": 15,
+    "bodyOrgan": "Brain, Pineal Gland",
+    "healthIndicators": {
+      "normal": "Clear, even coloring",
+      "attention": "White lines or spots - may indicate stress or inflammation",
+      "concern": "Dark spots - possible toxin accumulation"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Pituitary",
+    "clockPosition": "12:00",
+    "radiusStart": 0.15,
+    "radiusEnd": 0.25,
+    "angleStart": 350,
+    "angleEnd": 10,
+    "bodyOrgan": "Pituitary Gland",
+    "healthIndicators": {
+      "normal": "Smooth texture",
+      "attention": "Irregular patterns - hormonal imbalance",
+      "concern": "Discoloration - seek professional evaluation"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Neck & Throat",
+    "clockPosition": "1:00",
+    "radiusStart": 0.3,
+    "radiusEnd": 0.45,
+    "angleStart": 15,
+    "angleEnd": 45,
+    "bodyOrgan": "Thyroid, Throat, Neck",
+    "healthIndicators": {
+      "normal": "Even coloring",
+      "attention": "Radial lines - possible thyroid activity",
+      "concern": "Dark rings - chronic throat issues"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Bronchi",
+    "clockPosition": "2:00",
+    "radiusStart": 0.35,
+    "radiusEnd": 0.5,
+    "angleStart": 45,
+    "angleEnd": 75,
+    "bodyOrgan": "Bronchial Tubes",
+    "healthIndicators": {
+      "normal": "Clear passages indicated",
+      "attention": "White streaks - inflammation",
+      "concern": "Heavy markings - respiratory concerns"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Lung (Right)",
+    "clockPosition": "3:00",
+    "radiusStart": 0.5,
+    "radiusEnd": 0.7,
+    "angleStart": 75,
+    "angleEnd": 105,
+    "bodyOrgan": "Right Lung",
+    "healthIndicators": {
+      "normal": "Clear, consistent color",
+      "attention": "Cloudy areas - reduced function",
+      "concern": "Dark spots - requires attention"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Liver",
+    "clockPosition": "4:00",
+    "radiusStart": 0.4,
+    "radiusEnd": 0.65,
+    "angleStart": 105,
+    "angleEnd": 135,
+    "bodyOrgan": "Liver",
+    "healthIndicators": {
+      "normal": "Healthy color tone",
+      "attention": "Yellow tint - liver stress",
+      "concern": "Dark discoloration - liver congestion"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Gallbladder",
+    "clockPosition": "4:30",
+    "radiusStart": 0.35,
+    "radiusEnd": 0.5,
+    "angleStart": 120,
+    "angleEnd": 150,
+    "bodyOrgan": "Gallbladder",
+    "healthIndicators": {
+      "normal": "Smooth appearance",
+      "attention": "Small spots - bile activity",
+      "concern": "Heavy markings - gallbladder stress"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Kidney (Right)",
+    "clockPosition": "5:00-6:00",
+    "radiusStart": 0.45,
+    "radiusEnd": 0.65,
+    "angleStart": 135,
+    "angleEnd": 180,
+    "bodyOrgan": "Right Kidney",
+    "healthIndicators": {
+      "normal": "Clear zone",
+      "attention": "White marks - kidney stress",
+      "concern": "Dark areas - filtration issues"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Intestines (Ascending)",
+    "clockPosition": "5:00",
+    "radiusStart": 0.2,
+    "radiusEnd": 0.4,
+    "angleStart": 135,
+    "angleEnd": 165,
+    "bodyOrgan": "Ascending Colon",
+    "healthIndicators": {
+      "normal": "Even texture",
+      "attention": "Lines - digestive activity",
+      "concern": "Heavy markings - intestinal stress"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Appendix",
+    "clockPosition": "6:00",
+    "radiusStart": 0.25,
+    "radiusEnd": 0.4,
+    "angleStart": 165,
+    "angleEnd": 195,
+    "bodyOrgan": "Appendix",
+    "healthIndicators": {
+      "normal": "Clear area",
+      "attention": "Slight marking",
+      "concern": "Inflammation signs"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Reproductive Organs (Right)",
+    "clockPosition": "7:00",
+    "radiusStart": 0.5,
+    "radiusEnd": 0.7,
+    "angleStart": 180,
+    "angleEnd": 225,
+    "bodyOrgan": "Right Ovary/Prostate",
+    "healthIndicators": {
+      "normal": "Balanced appearance",
+      "attention": "Color changes - hormonal activity",
+      "concern": "Marked patterns - seek evaluation"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Sciatic Nerve (Right)",
+    "clockPosition": "8:00",
+    "radiusStart": 0.6,
+    "radiusEnd": 0.8,
+    "angleStart": 225,
+    "angleEnd": 255,
+    "bodyOrgan": "Right Sciatic Nerve",
+    "healthIndicators": {
+      "normal": "Clear pathways",
+      "attention": "Lines - nerve activity",
+      "concern": "Heavy marks - sciatic issues"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Leg & Hip (Right)",
+    "clockPosition": "9:00",
+    "radiusStart": 0.65,
+    "radiusEnd": 0.85,
+    "angleStart": 255,
+    "angleEnd": 285,
+    "bodyOrgan": "Right Leg & Hip",
+    "healthIndicators": {
+      "normal": "Even coloring",
+      "attention": "Marks - joint activity",
+      "concern": "Dark areas - circulation issues"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Spleen",
+    "clockPosition": "9:00-10:00",
+    "radiusStart": 0.5,
+    "radiusEnd": 0.7,
+    "angleStart": 270,
+    "angleEnd": 300,
+    "bodyOrgan": "Spleen",
+    "healthIndicators": {
+      "normal": "Healthy tone",
+      "attention": "Color variations - immune activity",
+      "concern": "Discoloration - spleen stress"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Pancreas",
+    "clockPosition": "7:00-8:00",
+    "radiusStart": 0.35,
+    "radiusEnd": 0.55,
+    "angleStart": 195,
+    "angleEnd": 240,
+    "bodyOrgan": "Pancreas",
+    "healthIndicators": {
+      "normal": "Clear appearance",
+      "attention": "Spots - blood sugar regulation",
+      "concern": "Heavy markings - pancreatic stress"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Stomach",
+    "clockPosition": "6:30-7:30",
+    "radiusStart": 0.2,
+    "radiusEnd": 0.35,
+    "angleStart": 180,
+    "angleEnd": 225,
+    "bodyOrgan": "Stomach",
+    "healthIndicators": {
+      "normal": "Smooth zone",
+      "attention": "Radial lines - digestive stress",
+      "concern": "Inflammation signs - acid issues"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Adrenal Gland (Right)",
+    "clockPosition": "5:30",
+    "radiusStart": 0.25,
+    "radiusEnd": 0.38,
+    "angleStart": 150,
+    "angleEnd": 180,
+    "bodyOrgan": "Right Adrenal Gland",
+    "healthIndicators": {
+      "normal": "Balanced appearance",
+      "attention": "White marks - stress response",
+      "concern": "Dark spots - adrenal fatigue"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Heart",
+    "clockPosition": "2:30-3:30",
+    "radiusStart": 0.3,
+    "radiusEnd": 0.5,
+    "angleStart": 60,
+    "angleEnd": 105,
+    "bodyOrgan": "Heart",
+    "healthIndicators": {
+      "normal": "Strong, even color",
+      "attention": "Lines radiating - cardiovascular activity",
+      "concern": "Dark rings - heart health attention needed"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Shoulder (Right)",
+    "clockPosition": "2:00",
+    "radiusStart": 0.6,
+    "radiusEnd": 0.8,
+    "angleStart": 45,
+    "angleEnd": 75,
+    "bodyOrgan": "Right Shoulder",
+    "healthIndicators": {
+      "normal": "Clear",
+      "attention": "Marks - joint activity",
+      "concern": "Heavy markings - shoulder issues"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Arm (Right)",
+    "clockPosition": "1:00-2:00",
+    "radiusStart": 0.7,
+    "radiusEnd": 0.9,
+    "angleStart": 15,
+    "angleEnd": 60,
+    "bodyOrgan": "Right Arm",
+    "healthIndicators": {
+      "normal": "Even appearance",
+      "attention": "Lines - circulation",
+      "concern": "Dark areas - poor circulation"
+    }
+  }
+]

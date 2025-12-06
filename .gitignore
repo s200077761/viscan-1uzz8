@@ -134,3 +134,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+*-debug.log
+functions/node_modules/
+functions/.runtimeconfig.json
+
+# Uploads directory (local development only)
+uploads/
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ViScan - Advanced Iris Analysis for Health Insights">
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#667eea">
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
+  
+  <!-- Apple PWA Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ViScan">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512x512.png">
+  
+  <title>ViScan - Iris Analysis System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">👁️ ViScan</div>
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#features">المميزات</a></li>
+        <li><a href="#about">عن التطبيق</a></li>
+        <li><a href="auth.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">تسجيل الدخول</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>🔍 تحليل القزحية المتقدم</h1>
+      <p>اكتشف رؤى صحية من خلال تحليل القزحية باستخدام تقنيات الذكاء الاصطناعي وخرائط التشخيص الطبي</p>
+      
+      <!-- Medical Disclaimer -->
+      <div class="alert alert-warning" style="max-width: 700px; margin: 2rem auto;">
+        <strong>⚠️ إخلاء المسؤولية الطبية</strong><br>
+        هذا التطبيق مخصص للأغراض التعليمية والمعلوماتية فقط. النتائج ليست تشخيصاً طبياً ولا تحل محل استشارة الطبيب المتخصص. يُرجى استشارة مقدم الرعاية الصحية المؤهل لأي مخاوف صحية.
+      </div>
+      
+      <div class="hero-buttons">
+        <a href="auth.html" class="btn btn-primary">ابدأ التحليل الآن</a>
+        <a href="#features" class="btn btn-secondary">تعرف على المميزات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">✨ المميزات الرئيسية</h2>
+      
+      <div class="features-grid">
+        <div class="card feature-card">
+          <div class="feature-icon">📸</div>
+          <h3>رفع الصور بسهولة</h3>
+          <p>ارفع صورة القزحية بسهولة مع دعم السحب والإفلات والمعاينة الفورية</p>
+        </div>
+
+        <div class="card feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3>خرائط المناطق</h3>
+          <p>تحليل 20+ منطقة في القزحية بناءً على خريطة برنارد جينسن العالمية</p>
+        </div>
+
+        <div class="card feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>تحليل الألوان</h3>
+          <p>اكتشاف الألوان السائدة وتفسير دلالاتها الصحية المحتملة</p>
+        </div>
+
+        <div class="card feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>كشف الأنماط</h3>
+          <p>تحديد الخطوط والبقع والحلقات في القزحية وتفسير معانيها</p>
+        </div>
+
+        <div class="card feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>لوحة تحكم تفاعلية</h3>
+          <p>عرض النتائج بشكل مرئي جذاب مع مخططات دائرية للمناطق</p>
+        </div>
+
+        <div class="card feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>سجل التحليلات</h3>
+          <p>احفظ جميع تحليلاتك وراجعها في أي وقت</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="margin-bottom: 2rem;">📖 عن علم القزحية</h2>
+        <div class="glass-card" style="padding: 3rem;">
+          <p style="font-size: 1.125rem; line-height: 1.8;">
+            علم القزحية (Iridology) هو ممارسة بديلة تعتمد على دراسة الأنماط والألوان 
+            والخصائص الأخرى في القزحية لتقييم الصحة العامة للشخص. يستخدم ممارسو هذا العلم 
+            خرائط مفصلة تقسم القزحية إلى مناطق محددة، كل منها يتوافق مع أعضاء أو أجهزة مختلفة في الجسم.
+          </p>
+          
+          <div class="alert alert-info" style="margin-top: 2rem; text-align: right;">
+            <strong>💡 ملاحظة مهمة:</strong><br>
+            على الرغم من استخدامه على نطاق واسع، لم تثبت الدراسات العلمية فعالية علم القزحية 
+            كأداة تشخيصية موثوقة. هذا التطبيق مصمم للأغراض التعليمية والاستكشافية فقط.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section style="background: rgba(102, 126, 234, 0.05);">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">⚙️ كيف يعمل؟</h2>
+      
+      <div class="features-grid">
+        <div class="glass-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">1️⃣</div>
+          <h3>قم بالتسجيل</h3>
+          <p>أنشئ حساباً مجانياً وآمناً</p>
+        </div>
+
+        <div class="glass-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">2️⃣</div>
+          <h3>ارفع صورة القزحية</h3>
+          <p>استخدم صورة عالية الجودة للقزحية</p>
+        </div>
+
+        <div class="glass-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
+          <h3>احصل على النتائج</h3>
+          <p>اطلع على التحليل التفصيلي والتوصيات</p>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="auth.html" class="btn btn-primary" style="font-size: 1.25rem; padding: 1rem 3rem;">
+          🚀 ابدأ الآن مجاناً
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: var(--bg-dark-secondary); padding: 3rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container">
+      <div class="logo" style="margin-bottom: 1rem; font-size: 2rem;">👁️ ViScan</div>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">
+        نظام تحليل القزحية المتقدم باستخدام تقنيات الذكاء الاصطناعي
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.875rem;">
+        © 2025 ViScan. جميع الحقوق محفوظة.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('✅ Service Worker registered successfully:', registration.scope);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New version available, show notification
+                  if (confirm('إصدار جديد من التطبيق متوفر! هل تريد التحديث الآن؟')) {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch((error) => {
+            console.error('❌ Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
