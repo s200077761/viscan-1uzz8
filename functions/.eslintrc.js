@@ -13,11 +13,12 @@ module.exports = {
   'rules': {
     'no-restricted-globals': ['error', 'name', 'length'],
     'prefer-arrow-callback': 'error',
-    'quotes': ['error', 'single'],
-    'max-len': ['error', {code: 100}],
+    'quotes': ['error', 'single', {'allowTemplateLiterals': true}],
+    'max-len': ['error', {code: 100, ignoreStrings: true}],
     'object-curly-spacing': ['error', 'never'],
     'require-jsdoc': 'off',
     'valid-jsdoc': 'off',
+    'new-cap': 'off', // Allow Router(), Busboy() etc
   },
   'overrides': [
     {
