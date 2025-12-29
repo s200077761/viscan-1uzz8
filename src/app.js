@@ -354,11 +354,12 @@ class ViScanApp {
     const messages = [];
     
     // User message (image upload)
+    const imageUrl = URL.createObjectURL(new Blob());
     messages.push({
       role: 'user',
       content: `I've uploaded an iris image for analysis.`,
       timestamp: analysis.timestamp,
-      image: analysis.imageUrl
+      image: analysis.imageUrl // Use server URL instead of blob
     });
     
     // Assistant response (analysis results)

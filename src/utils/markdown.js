@@ -37,7 +37,10 @@ function basicMarkdown(text) {
   text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
   
   // Code blocks
-  text = text.replace(/```(\w+)?\n([\s\S]+?)```/g, '<pre><code class="language-$1">$2</code></pre>');
+  text = text.replace(/```(\w+)?\n([\s\S]+?)```/g, (match, lang, code) => {
+    const langClass = lang ? `language-${lang}` : '';
+    return `<pre><code class="${langClass}">${code}</code></pre>`;
+  });
   
   // Inline code
   text = text.replace(/`(.+?)`/g, '<code>$1</code>');
