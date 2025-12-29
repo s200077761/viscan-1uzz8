@@ -85,9 +85,11 @@ class MessageBubble {
     text = text.replace(/^## (.+)$/gm, '<h2>$1</h2>');
     text = text.replace(/^# (.+)$/gm, '<h1>$1</h1>');
     
-    // Lists
-    text = text.replace(/^- (.+)$/gm, '<li>$1</li>');
-    text = text.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+    // Lists - wrap consecutive list items in ul tags
+    text = text.replace(/((?:^- .+$\n?)+)/gm, (match) => {
+      const items = match.replace(/^- (.+)$/gm, '<li>$1</li>');
+      return '<ul>' + items + '</ul>';
+    });
     
     return text;
   }

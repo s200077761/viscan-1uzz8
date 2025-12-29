@@ -2,6 +2,7 @@
 class IrisResultCard {
   constructor(analysisData) {
     this.analysisData = analysisData;
+    this.MAX_DISPLAYED_ZONES = 12; // Maximum number of zones to display in the grid
   }
   
   render() {
@@ -95,7 +96,7 @@ class IrisResultCard {
   }
   
   renderZones(zones) {
-    return zones.slice(0, 12).map(zone => `
+    return zones.slice(0, this.MAX_DISPLAYED_ZONES).map(zone => `
       <div style="background: rgba(255,255,255,0.03); padding: 0.75rem; border-radius: 0.5rem; border-left: 3px solid ${this.getZoneColor(zone.organ)};">
         <div style="font-size: 0.875rem; font-weight: 600; margin-bottom: 0.25rem;">${zone.organ}</div>
         <div style="font-size: 0.75rem; color: var(--dark-text-muted);">

@@ -12,11 +12,14 @@ class MCPClient {
   
   async connect() {
     try {
-      // Check if MCP server is available
+      // Check if MCP server is available with timeout
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000);
+      
       const response = await fetch(`${this.serverUrl}/health`, {
         headers: this.getHeaders(),
-        timeout: 5000
-      }).catch(() => null);
+        signal: controller.signal
+      }).catch(() => null).finally(() => clearTimeout(timeoutId));
       
       if (response && response.ok) {
         this.connected = true;
